@@ -1,0 +1,74 @@
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  background-color: darkgrey;
+}
+
+#main {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 800px) {
+  #main {
+    max-width: 700px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.description {
+  font-style: italic;
+}
+
+form {
+  background: grey;
+  padding: 2.5rem 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.field {
+  margin: 0 auto 1.5rem auto;
+  padding: 0.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+  font-size: large;
+}
+
+.input {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  color: dimgray;
+  border: 1px solid white;
+}
+
+.input:invalid {
+    border: 2px dashed red;
+  }
+
+
+textarea {
+  min-height: 150px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: dimgray;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+* { 
+  box-sizing: border-box;
+}
