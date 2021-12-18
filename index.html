@@ -10,64 +10,49 @@
 </head>
 
 <body>
-    <div id="main">
-        <div id="header">
-            <h1 id="title" class="text-center">YetAnotherStartup survey form</h1>
-            <p id="description" class="text-center description">
-                We will probably not read it :v)
-            </p>
-        </div>
+    <div id="container">
+        <header>
+            <h1 id="title">University student satisfaction survey</h1>
+            <p id="description">Your feedback is vital to us</p>
+        </header>
         <form action="" id="survey-form">
-            <div class="field">
-                <label for="name" id="name-label">Name: </label>
-                <input type="text" id="name" class="input" placeholder="Name" required/>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" required placeholder="Please enter your name">
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="" id="email" required placeholder="Please enter your email">
+
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" name="" id="number" min="0" max="99" required placeholder="Please enter your age">
+
+            <label for="dropdown">Choose a level of education:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="ass">Associate Degree</option>
+                <option value="mas">Master Degreee</option>
+                <option value="doc">Doctorat Degree</option>
+            </select>
+
+            <div class="fix-multi">
+                <label for="input-radio">How well do the professors teach at this university ?</label>
+                <label for="radio"><input type="radio" name="radio" id="well" value="well">Well</label>
+                <label for="radio"><input type="radio" name="radio" id="som" value="som">Somewhat well</label>
+                <label for="radio"><input type="radio" name="radio" id="bad" value="bad">Not well</label>
             </div>
 
-            <div class="field">
-                <label for="email" id="email-label">Email: </label>
-                <input type="email" id="email" class="input" placeholder="Email" required/>
+            <div class="fix-multi">
+                <label for="input-checkbox">What are the things that should be improved on ?</label>
+                <label for="checkbox"><input type="checkbox" value="Classrooms" name="Classrooms" checked>Classrooms</label>
+                <label for="checkbox"><input type="checkbox" value="Restaurant" name="Restaurant">Restaurant</label>
+                <label for="checkbox"><input type="checkbox" value="Transport" name="Transport">Transport</label>
+                <label for="checkbox"><input type="checkbox" value="Dorms" name="Dorms">Dorms</label>
             </div>
 
-            <div class="field">
-                <label for="number" id="number-label">Age: </label>
-                <input type="number" id="number" class="input" min="18" max="60" placeholder="Age" />
-            </div>
+            <label for="textarea">Any other feedback ?</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                placeholder="Enter your feedback here"></textarea>
 
-            <div class="field">
-                <label for="dropdown">
-                    Dropdown:
-                </label>
-                <select id="dropdown" name="dropdown" class="input">
-                    <option value="op1">Option1</option>
-                    <option value="op2">Option2</option>
-                    <option value="op3">Option2</option>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="">Radio choice:</label>
-                <label>
-                    <input name="radio" value="op1" type="radio" checked="" />Option1</label>
-                <label>
-                    <input name="radio" value="op2" type="radio" checked="" />Option2</label>
-                <label>
-                    <input name="radio" value="op3" type="radio" checked="" />Option2</label>
-            </div>
-            <div class="field">
-                <label for="">Checkbox choice:</label>
-                <label><input name="checkbox" value="op1" type="checkbox" />Option1</label>
-                <label><input name="checkbox" value="op2" type="checkbox" />Option2</label>
-                <label><input name="checkbox" value="op3" type="checkbox" />Option3</label>
-            </div>
-            <div class="field">
-                <label for="">Any comments?</label>
-                <textarea name="comment" placeholder="Comment"></textarea>
-            </div>
-            <div class="field">
-                <button type="submit" id="submit">
-                    Submit
-                </button>
-            </div>
+            <button id="submit">Submit</button>
         </form>
     </div>
 </body>

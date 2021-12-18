@@ -1,74 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  color: white;
-  background-color: darkgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
 }
 
-#main {
-  width: 100%;
-  margin: 1rem auto;
+#container {
+  margin: 30px auto;
+  width: 800px;
 }
 
-@media (min-width: 800px) {
-  #main {
-    max-width: 700px;
-  }
-}
-
-.text-center {
+header {
+  background: dimgray;
+  padding: 10px 10px;
+  border-radius: 10px 10px 0 0;
+  color: whitesmoke;
   text-align: center;
 }
 
-.description {
-  font-style: italic;
+#title {
+  margin-bottom: 5px;
 }
 
-form {
-  background: grey;
-  padding: 2.5rem 2.5rem;
-  border-radius: 0.5rem;
+#survey-form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
 }
 
-.field {
-  margin: 0 auto 1.5rem auto;
-  padding: 0.25rem;
+input,
+select, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-  font-size: large;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.input {
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  color: dimgray;
-  border: 1px solid white;
+label[for="radio"], label[for="checkbox"] {
+  margin-top: 5px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
 }
 
-.input:invalid {
-    border: 2px dashed red;
-  }
+input[type="radio"], input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin-bottom: 0px;
+}
 
-
-textarea {
-  min-height: 150px;
-  width: 100%;
-  padding: 0.5rem;
+.fix-multi {
+  margin-bottom: 20px;
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background: dimgray;
-  color: inherit;
-  border-radius: 2px;
-  cursor: pointer;
+  padding: 10px;
   border: none;
+  background: dimgray;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-* { 
-  box-sizing: border-box;
-}
